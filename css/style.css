@@ -50,11 +50,42 @@ div h2{display: flex; flex-direction: row; justify-content: center; font-family:
     grid-template-areas: "prod1 prod2 prod3 prod4";
     justify-items: center;
 }
+/* productos */
+.producto1{
+    font-family: 'Archivo', sans-serif; 
+    background-color: white; 
+    display: inline-block; 
+    grid-area: prod1;
+    width: 270px;
+    transition: all 1s;}
+.producto2{
+    font-family: 'Archivo', sans-serif; 
+    background-color: white; 
+    display: inline-block; 
+    grid-area: prod2;
+    width: 270px;
+    transition: all 1s;}
+.producto3{
+    font-family: 'Archivo', sans-serif; 
+    background-color: white; 
+    display: inline-block; 
+    grid-area: prod3;
+    width: 270px;
+    transition: all 1s;}
+.producto4{
+    font-family: 'Archivo', sans-serif; 
+    background-color: white; 
+    display: inline-block; 
+    grid-area: prod4;
+    width: 270px;
+    transition: all 1s;}
 
-.producto1{font-family: 'Archivo', sans-serif; background-color: white; display: inline-block; grid-area: prod1;width: 270px;}
-.producto2{font-family: 'Archivo', sans-serif; background-color: white; display: inline-block;grid-area: prod2;width: 270px;}
-.producto3{font-family: 'Archivo', sans-serif; background-color: white; display: inline-block;grid-area: prod3; width: 270px;}
-.producto4{font-family: 'Archivo', sans-serif; background-color: white; display: inline-block;grid-area: prod4;width: 270px;}
+
+.producto1:hover{transform: scale(1.05);}
+.producto2:hover{transform: scale(1.05);}
+.producto3:hover{transform: scale(1.05);}
+.producto4:hover{transform: scale(1.05);}
+
 h4 {text-align: center;}
 
 .agregarCarrito{
@@ -170,6 +201,7 @@ font-size: 30px;
 .producto{
     grid-area: Prod;
     font-family: 'Archivo', sans-serif; background-color: white;
+    transition: all 1s;
 }
 #CuidadoCapilar{
     width: 95%;
@@ -195,6 +227,7 @@ font-size: 30px;
 .producto{
     grid-area: Prod;
     font-family: 'Archivo', sans-serif; background-color: white;
+    transition: all 1s;
 }
 #CuidadoCovid{
     width: 95%;
@@ -220,7 +253,10 @@ font-size: 30px;
 .producto{
     grid-area: Prod;
     font-family: 'Archivo', sans-serif; background-color: white;
+    transition: all 1s;
 }
+.producto:hover{transform: scale(1.05);}
+
 
 @media only screen and (max-width: 576px) {
 /*index*/
