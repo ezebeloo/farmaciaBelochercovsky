@@ -1,0 +1,252 @@
+*{margin: 0;
+padding: 0;}
+
+body{background-color: rgb(239,239,239);}
+
+h1{font-family: 'Archivo', sans-serif; text-align:start; margin-left: 1%; font-size: 160%;}
+
+#PruebaIconos{display: flex; flex-direction: row; justify-content: end;}
+
+.carrito {
+width: 50px;
+height: 50px;
+margin-right: 1%;
+margin-left: 7px;}
+
+ a{color: black;}
+
+
+header{
+    position: sticky;
+    top: 0;
+/* background: -webkit-linear-gradient(to left, #FAFFD1, #A1FFCE);  
+background: linear-gradient(to left, #FAFFD1, #A1FFCE);  */
+ background-color: rgb(204,252,203) }
+
+nav ul{display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    list-style-type: none;}
+
+nav ul li {display: inline-block; font-family: 'Archivo', sans-serif; font-size: 110%; border: 1px solid black; 
+    padding: 5px; }
+
+nav ul li a{text-decoration: none;}
+nav ul li:hover{background-color: rgb(86,130,89);}
+
+
+.destacados{font-size: 140%;}
+.parrafoPrueba{height: 200px; margin-top: 20px;}
+div h2{display: flex; flex-direction: row; justify-content: center; font-family: 'Rubik', sans-serif; font-size: 140%;}
+
+
+
+
+
+#productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "prod1 prod2 prod3 prod4";
+    justify-items: center;
+}
+
+.producto1{font-family: 'Archivo', sans-serif; background-color: white; display: inline-block; grid-area: prod1;width: 270px;}
+.producto2{font-family: 'Archivo', sans-serif; background-color: white; display: inline-block;grid-area: prod2;width: 270px;}
+.producto3{font-family: 'Archivo', sans-serif; background-color: white; display: inline-block;grid-area: prod3; width: 270px;}
+.producto4{font-family: 'Archivo', sans-serif; background-color: white; display: inline-block;grid-area: prod4;width: 270px;}
+h4 {text-align: center;}
+
+.agregarCarrito{
+    display: inline-block; 
+    background-color: rgb(153,194,162); 
+    border: 1px solid black; 
+    padding: 2px;
+width: 265px;
+color: white; font-weight: 500;
+display: flex; justify-content: center;}
+
+
+.MejoresOfertas{display: flex; flex-direction: row; justify-content: center;}
+
+.IngresarEmail{display: flex; flex-direction: row; justify-content: center;}
+.Suscribirme{border: 1px solid black;}
+
+
+footer{
+    background-color:rgb(86,130,89) ;display: flex; flex-direction:row; justify-content: space-around; align-items: center;}
+
+.textoFooter{
+    width: 30%;
+    display: flex;
+}
+
+.mapa{margin-top: 1%;
+margin-bottom: 1%;}
+
+/* seccion "Marcas" */
+
+.MarcasOnePage{ 
+    display: flex;
+     flex-direction:row; justify-content: space-evenly;
+     margin: 2%; font-size: large;font-weight: bold;
+ font-size: 30px;} 
+
+     
+
+
+#Amoxidal{display: inline;font-family:'Archivo', sans-serif ;}
+
+
+
+#ProductosMarcas{ display: inline-block;}
+
+
+.VolverArriba{display:inline-block;
+    border: 1px solid black; background-color: aqua;
+    font-family: 'Archivo', sans-serif;}
+
+/* seccion Perfumes*/
+
+ul li  {font-family:'Archivo', sans-serif; margin: 2%; 
+    display: inline-block;}
+
+.PerfumesOnePage{display: flex; 
+    justify-content: space-evenly;
+font-family: 'Archivo', sans-serif; font-weight: bold;
+font-size: 30px;
+}
+
+
+/*Seccion Contacto*/
+
+#FotosOpiniones{ width: 40%;
+}
+.Formulario{font-family:'Archivo', sans-serif;}
+
+
+.opinionesTitulo{display: flex; justify-content: center;font-family:'Archivo', sans-serif;
+}
+.personas{display: flex; justify-content: center;}
+
+.contenedorOpiniones{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+
+/*Seccion Higiene*/
+
+
+#ProductosHigiene{display: flex; flex-direction: row; justify-content: space-around;}
+#CuidadoBucal{
+    width: 95%;
+    border: 0.5px solid black;
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(0.5fr 2fr);
+    grid-template-rows: 0.5fr 1.5fr;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    grid-template-areas: 
+    " txt txt"
+    "img prod";
+}
+.TextoBucal{grid-area: txt;
+     font-size: 170%;  margin: 10px;
+}
+.ImagenBucal{
+    grid-area: img;
+    margin: 20px;
+}
+.producto{
+    grid-area: Prod;
+    font-family: 'Archivo', sans-serif; background-color: white;
+}
+#CuidadoCapilar{
+    width: 95%;
+    border: 0.5px solid black;
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(0.5fr 2fr);
+    grid-template-rows: 0.5fr 1.5fr;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    grid-template-areas: 
+    " txt txt"
+    "img prod";
+}
+.TextoCapilar{grid-area: txt;
+     font-size: 170%;  margin: 10px;
+}
+.ImagenCapilar{
+    grid-area: img;
+    margin: 20px;
+}
+.producto{
+    grid-area: Prod;
+    font-family: 'Archivo', sans-serif; background-color: white;
+}
+#CuidadoCovid{
+    width: 95%;
+    border: 0.5px solid black;
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(0.5fr 2fr);
+    grid-template-rows: 0.5fr 1.5fr;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    grid-template-areas: 
+    " txt txt"
+    "img prod";
+}
+.TextoCovid{grid-area: txt;
+     font-size: 170%;  margin: 10px;
+}
+.ImagenCovid{
+    grid-area: img;
+    margin: 20px;
+}
+.producto{
+    grid-area: Prod;
+    font-family: 'Archivo', sans-serif; background-color: white;
+}
+
+@media only screen and (max-width: 576px) {
+/*index*/
+#productos{
+grid-template-columns:repeat(1,1fr) ;
+grid-template-rows: 4fr;
+grid-template-areas: 
+"prod1"
+"prod2"
+"prod3"
+"prod4";
+margin: 5px;
+}
+.producto1{margin-bottom: 5%}
+.producto2{margin-bottom: 5%}
+.producto3{margin-bottom: 5%}
+.producto4{margin-bottom: 5%}
+
+ul li{margin: 0;}
+
+.mapa{width: 200px;
+height: 150px;}
+
+/*contacto*/
+
+#FotosOpiniones{ width: 56%;
+}
+
+}
