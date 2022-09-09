@@ -203,7 +203,7 @@ font-size: 30px;
 .producto{
     grid-area: Prod;
     font-family: 'Archivo', sans-serif; background-color: white;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 #CuidadoCapilar{
     width: 95%;
