@@ -16,7 +16,7 @@ margin-left: 7px;}
  a{color: black;}
 
 
-header{
+ header{
     position: sticky;
     top: 0;
 /* background: -webkit-linear-gradient(to left, #FAFFD1, #A1FFCE);  
@@ -57,28 +57,28 @@ div h2{display: flex; flex-direction: row; justify-content: center; font-family:
     display: inline-block; 
     grid-area: prod1;
     width: 270px;
-    transition: all 1s;}
+    transition: all 0.6s;}
 .producto2{
     font-family: 'Archivo', sans-serif; 
     background-color: white; 
     display: inline-block; 
     grid-area: prod2;
     width: 270px;
-    transition: all 1s;}
+    transition: all 0.6s;}
 .producto3{
     font-family: 'Archivo', sans-serif; 
     background-color: white; 
     display: inline-block; 
     grid-area: prod3;
     width: 270px;
-    transition: all 1s;}
+    transition: all 0.6s;}
 .producto4{
     font-family: 'Archivo', sans-serif; 
     background-color: white; 
     display: inline-block; 
     grid-area: prod4;
     width: 270px;
-    transition: all 1s;}
+    transition: all 0.6s;}
 
 
 .producto1:hover{transform: scale(1.05);}
@@ -98,10 +98,10 @@ color: white; font-weight: 500;
 display: flex; justify-content: center;}
 
 
-.MejoresOfertas{display: flex; flex-direction: row; justify-content: center;}
+.MejoresOfertas{display: flex; flex-direction: row; justify-content: center; margin: 10px;  font-family: 'Archivo', sans-serif;}
 
-.IngresarEmail{display: flex; flex-direction: row; justify-content: center;}
-.Suscribirme{border: 1px solid black;}
+.IngresarEmail{display: flex; flex-direction: row; justify-content: center; font-family: 'Archivo', sans-serif;}
+.Suscribirme{border: 1px solid black; font-family: 'Archivo', sans-serif;}
 
 
 footer{
@@ -151,13 +151,13 @@ font-size: 30px;
 
 /*Seccion Contacto*/
 
-#FotosOpiniones{ width: 40%;
-}
+#FotosOpiniones{ width: 40%;}
+
 .Formulario{font-family:'Archivo', sans-serif;}
 
 
-.opinionesTitulo{display: flex; justify-content: center;font-family:'Archivo', sans-serif;
-}
+.opinionesTitulo{display: flex; justify-content: center;font-family:'Archivo', sans-serif;}
+
 .personas{display: flex; justify-content: center;}
 
 .contenedorOpiniones{ 
@@ -166,7 +166,7 @@ font-size: 30px;
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     justify-items: center;
-    align-items: center;
+    align-items: center;   
 }
 
 
@@ -227,7 +227,7 @@ font-size: 30px;
 .producto{
     grid-area: Prod;
     font-family: 'Archivo', sans-serif; background-color: white;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 #CuidadoCovid{
     width: 95%;
