@@ -177,6 +177,7 @@ font-size: 30px;
 
 /*Seccion Higiene*/
 
+header{z-index: 105;}
 
 #ProductosHigiene{display: flex; flex-direction: row; justify-content: space-around;}
 #CuidadoBucal{
@@ -199,12 +200,14 @@ font-size: 30px;
 .ImagenBucal{
     grid-area: img;
     margin: 20px;
+    width: 75%;
 }
 .producto{
     grid-area: Prod;
     font-family: 'Archivo', sans-serif; background-color: white;
     transition: all 0.5s;
 }
+
 #CuidadoCapilar{
     width: 95%;
     border: 0.5px solid black;
@@ -285,6 +288,17 @@ height: 150px;}
 /*contacto*/
 
 #FotosOpiniones{ width: 56%;
+}
+
+/*Higiene*/
+
+#CuidadoBucal{
+    grid-template-columns: repeat( 1fr);
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-areas: 
+    "txt"
+    "img"
+    "prod";
 }
 
 }
