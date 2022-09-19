@@ -26,6 +26,7 @@ margin-left: 7px;}
 
  header{
     position: sticky;
+    z-index: 105;
     top: 0;
 background: -webkit-linear-gradient(to left, #FAFFD1, #A1FFCE);  
 background: linear-gradient(to left, #FAFFD1, #A1FFCE); 
@@ -109,10 +110,10 @@ color: white; font-weight: 500;
 display: flex; justify-content: center;}
 
 
-.MejoresOfertas{display: flex; flex-direction: row; justify-content: center; margin: 10px;  font-family: 'Archivo', sans-serif;}
+.MejoresOfertas{display: flex; flex-direction: row; justify-content: center; margin: 10px;  font-family: 'Archivo', sans-serif; font-size: 20px;}
 
 .IngresarEmail{display: flex; flex-direction: row; justify-content: center; font-family: 'Archivo', sans-serif;}
-.Suscribirme{border: 1px solid black; font-family: 'Archivo', sans-serif;}
+.btn-outline-secondary{margin-bottom: 1%;}
 
 
 footer{
@@ -199,9 +200,9 @@ A:visited {color: black;text-decoration: none }
 
 /*Seccion Higiene*/
 
-header{z-index: 105;}
 
-#ProductosHigiene{display: flex; flex-direction: row; justify-content: space-around;}
+
+/* #ProductosHigiene{display: flex; flex-direction: row; justify-content: space-around;} */
 #CuidadoBucal{
     width: 95%;
     border: 0.5px solid black;
@@ -213,8 +214,8 @@ header{z-index: 105;}
     background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     grid-template-areas: 
-    " txt txt"
-    "img prod";
+    " txt txt txt"
+    "img prodh1 prodh2";
 }
 .TextoBucal{grid-area: txt;
      font-size: 170%;  margin: 10px;
@@ -235,14 +236,14 @@ header{z-index: 105;}
     border: 0.5px solid black;
     margin: 3%;
     display: grid;
-    grid-template-columns: repeat(0.5fr 2fr);
+    grid-template-columns: repeat(0.5fr 1fr 1fr);
     grid-template-rows: 0.3fr 1.5fr;
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     grid-template-areas: 
-    " txt txt"
-    "img prod";
+    " txt txt txt"
+    "img prodh1 prodh2";
 }
 .TextoCapilar{grid-area: txt;
      font-size: 170%;  margin: 10px;
@@ -250,7 +251,24 @@ header{z-index: 105;}
 .ImagenCapilar{
     grid-area: img;
     margin: 20px;
+    width: 75%;
 }
+.productoh1{
+    font-family: 'Archivo', sans-serif; 
+    background-color: white; 
+    display: inline-block; 
+    grid-area: prodh1;
+    width: 270px;
+    transition: all 0.6s;}
+.productoh1:hover{transform: scale(1.05);}
+.productoh2{
+        font-family: 'Archivo', sans-serif; 
+        background-color: white; 
+        display: inline-block; 
+        grid-area: prodh2;
+        width: 270px;
+        transition: all 0.6s;}
+        .productoh2:hover{transform: scale(1.05);}
 .producto{
     grid-area: Prod;
     font-family: 'Archivo', sans-serif; background-color: white;
@@ -267,8 +285,8 @@ header{z-index: 105;}
     background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     grid-template-areas: 
-    " txt txt"
-    "img prod";
+    " txt txt txt"
+    "img prodh1 prodh2";
 }
 .TextoCovid{grid-area: txt;
      font-size: 170%;  margin: 10px;
@@ -276,6 +294,7 @@ header{z-index: 105;}
 .ImagenCovid{
     grid-area: img;
     margin: 20px;
+    width: 75%;
 }
 .producto{
     grid-area: Prod;
@@ -299,7 +318,7 @@ header{z-index: 105;}
 @media only screen and (max-width: 576px) {
 /*index*/
 #productos{
-grid-template-columns:repeat(1,1fr) ;
+grid-template-columns:1fr ;
 grid-template-rows: 4fr;
 grid-template-areas: 
 "prod1"
@@ -327,12 +346,39 @@ height: 150px;}
 
 #CuidadoBucal{
     grid-template-columns: repeat( 1fr);
-    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
     grid-template-areas: 
     "txt"
     "img"
-    "prod";
+    "prodh1"
+    "prodh2"
+    ;
 }
+
+#CuidadoCapilar{
+    grid-template-columns: repeat( 1fr);
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "txt"
+    "img"
+    "prodh1"
+    "prodh2"
+    ;
+}
+
+#CuidadoCovid{
+    grid-template-columns: repeat( 1fr);
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "txt"
+    "img"
+    "prodh1"
+    "prodh2"
+    ;
+}
+
+
+
 
 }
 @media (min-width: 992px){
