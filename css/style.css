@@ -216,6 +216,7 @@ A:visited {color: black;text-decoration: none }
     grid-template-areas: 
     " txt txt txt"
     "img prodh1 prodh2";
+    justify-items: center;
 }
 .TextoBucal{grid-area: txt;
      font-size: 170%;  margin: 10px;
@@ -225,34 +226,7 @@ A:visited {color: black;text-decoration: none }
     margin: 20px;
     width: 75%;
 }
-.producto{
-    grid-area: Prod;
-    font-family: 'Archivo', sans-serif; background-color: white;
-    transition: all 0.5s;
-}
 
-#CuidadoCapilar{
-    width: 95%;
-    border: 0.5px solid black;
-    margin: 3%;
-    display: grid;
-    grid-template-columns: repeat(0.5fr 1fr 1fr);
-    grid-template-rows: 0.3fr 1.5fr;
-    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    grid-template-areas: 
-    " txt txt txt"
-    "img prodh1 prodh2";
-}
-.TextoCapilar{grid-area: txt;
-     font-size: 170%;  margin: 10px;
-}
-.ImagenCapilar{
-    grid-area: img;
-    margin: 20px;
-    width: 75%;
-}
 .productoh1{
     font-family: 'Archivo', sans-serif; 
     background-color: white; 
@@ -268,12 +242,32 @@ A:visited {color: black;text-decoration: none }
         grid-area: prodh2;
         width: 270px;
         transition: all 0.6s;}
-        .productoh2:hover{transform: scale(1.05);}
-.producto{
-    grid-area: Prod;
-    font-family: 'Archivo', sans-serif; background-color: white;
-    transition: all 0.5s;
+.productoh2:hover{transform: scale(1.05);}
+#CuidadoCapilar{
+    width: 95%;
+    border: 0.5px solid black;
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(0.5fr 1fr 1fr);
+    grid-template-rows: 0.3fr 1.5fr;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    grid-template-areas: 
+    " txt txt txt"
+    "img prodh1 prodh2";
+    justify-items: center;
 }
+.TextoCapilar{grid-area: txt;
+     font-size: 170%;  margin: 10px;
+}
+.ImagenCapilar{
+    grid-area: img;
+    margin: 20px;
+    width: 75%;
+}
+
+
 #CuidadoCovid{
     width: 95%;
     border: 0.5px solid black;
@@ -287,6 +281,7 @@ A:visited {color: black;text-decoration: none }
     grid-template-areas: 
     " txt txt txt"
     "img prodh1 prodh2";
+    justify-items: center;
 }
 .TextoCovid{grid-area: txt;
      font-size: 170%;  margin: 10px;
@@ -296,12 +291,6 @@ A:visited {color: black;text-decoration: none }
     margin: 20px;
     width: 75%;
 }
-.producto{
-    grid-area: Prod;
-    font-family: 'Archivo', sans-serif; background-color: white;
-    transition: all 0.5s;
-}
-.producto:hover{transform: scale(1.05);}
 
 .btn{
     background-color:  rgb(153,194,162);
