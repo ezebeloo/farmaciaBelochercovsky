@@ -1,0 +1,39 @@
+#productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "prod1 prod2 prod3 prod4";
+    justify-items: center;
+}
+
+.producto1{
+    grid-area: prod1;
+    @extend %productos-disp;
+}
+
+.producto2{
+    grid-area: prod2;
+    @extend %productos-disp;
+}
+
+.producto3{
+    grid-area: prod3;
+    @extend %productos-disp;
+}
+
+.producto4{
+    grid-area: prod4;
+    @extend %productos-disp;
+}
+
+.btn{
+    background-color:  rgb(153,194,162);
+    border: 1px solid black;
+    &:hover{
+    background-color: rgb(239,239,239);
+    color: rgb(153,194,162);
+    border: 1px solid black;}
+}
+
+.btn-primary{color: #ECE9E6;}
+
