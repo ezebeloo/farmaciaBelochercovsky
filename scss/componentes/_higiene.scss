@@ -1,0 +1,22 @@
+
+.TextoBucal{
+    @extend %titulo-higiene;
+}
+
+.TextoCapilar{
+    @extend %titulo-higiene;
+}
+
+.TextoCovid{
+    @extend %titulo-higiene;
+}
+
+.ImagenBucal{
+    @extend %foto-higiene;
+}
+.ImagenBCapilar{
+    @extend %foto-higiene;
+}
+.ImagenCovid{
+    @extend %foto-higiene;
+}

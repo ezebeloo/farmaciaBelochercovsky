@@ -1,0 +1,35 @@
+
+.destacados{font-size: 140%; 
+    margin-bottom: 3%; 
+    margin-top: 1%;
+    h2{
+        @extend %display-flex;
+        justify-content: center; 
+        font-family: nth($font-family,2 );
+         font-size: 140%;
+    }
+}
+
+
+.MejoresOfertas{@extend %display-flex; 
+                justify-content: center;
+                margin: 10px;
+                font-family: nth($font-family, 1 ); 
+                font-size: 20px;}
+    
+.IngresarEmail{@extend %display-flex;
+     justify-content: center; 
+     font-family: nth($font-family, 1 );}
+
+.btn-outline-secondary{margin-bottom: 1%;}
+
+    
+@media only screen and (max-width: 576px){
+ ul li{margin: 0;}
+    
+    .mapa{width: 200px;
+    height: 150px;}   
+}
+    
+    
+    

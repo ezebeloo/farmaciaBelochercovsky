@@ -1,0 +1,54 @@
+.MarcasOnePage{ 
+    @extend %display-flex;
+    justify-content: space-evenly;
+     margin: 2%; 
+     font-size: large;
+     font-weight: bold;
+     font-size: 30px;
+     @media only screen and (max-width: 576px){flex-direction: column;}
+    } 
+
+ul{
+    li{
+        a{
+            color: nth($colores, 3 );
+            text-decoration: none;
+            &:hover{
+                color: nth($colores, 4)
+            }
+        }
+    }
+}
+
+
+#Amoxidal{@extend %enlace-rel-marcas;
+    font-family: nth($font-family, 1 );}
+#Febratic{
+    @extend %enlace-rel-marcas;
+    font-family: nth($font-family, 1 );
+}
+#Ibupirac{@extend %enlace-rel-marcas;
+    font-family: nth($font-family, 1 );}
+
+.producto-marca{
+    font-family: nth($font-family, 1 );
+    background-color: white; 
+    width: 270px;
+    transition: all 0.6s;
+    margin: 2%;
+    &:hover{transform: scale(1.05);
+
+    }
+}
+
+.VolverArriba{display:inline-block;
+            border: 1px solid black; 
+            color: black;
+            text-decoration: none;
+            background-color: nth($colores, 5 );
+            font-family: nth($font-family, 1 );
+            padding: 2px;
+            margin: 10px;
+            &:hover{
+                color: nth($colores, 1 );
+            }}

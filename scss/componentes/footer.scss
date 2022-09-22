@@ -1,0 +1,13 @@
+footer{
+    background-color:rgb(86,130,89) ;
+    @extend %display-flex;
+    justify-content: space-around;
+    align-items: center;}
+
+.textoFooter{
+    width: 30%;
+    display: flex;
+}
+
+.mapa{margin-top: 1%;
+margin-bottom: 1%;}

@@ -1,0 +1,25 @@
+ul li  {font-family:'Archivo', sans-serif; margin: 2%; 
+    display: inline-block;}
+
+.PerfumesOnePage{@extend %display-flex;
+                justify-content: center;
+            font-family: nth($font-family, 1 ); 
+            font-weight: bold;
+            font-size: 30px;
+            @media only screen and (max-width: 576px){
+                flex-direction: column;
+            }
+}
+
+#Hombres{text-align:  center;}
+#Mujeres{text-align:  center;}
+#Infantil{text-align:  center;}
+
+.perfume{
+    font-family: nth($font-family, 1 ); 
+    background-color: white;
+    transition: all 0.5s;
+    display: inline-block;
+    margin: 5px 2% 3% 1%;
+    &:hover{transform: scale(1.05);}
+}

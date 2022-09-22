@@ -1,0 +1,28 @@
+#FotosOpiniones{width: 40%;
+    @media only screen and (max-width: 576px) { 
+        width: 56%;
+    }
+    }
+    
+.Formulario{font-family: nth($font-family, 1);}
+    
+    
+.opinionesTitulo{
+                display: flex;
+                justify-content: center;
+                font-family:'Archivo', sans-serif;
+            }
+    
+.personas{display: flex; justify-content: center;}
+    
+.contenedorOpiniones{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        justify-items: center;
+        align-items: center;   
+    }
+    
+    
+    

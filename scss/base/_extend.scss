@@ -13,4 +13,37 @@
     &:hover {transform: scale(1.05);}
 }
 
+%productoshig-disp{
+    width: 95%;
+    border: 0.5px solid black;
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(0.5fr 2fr);
+    grid-template-rows: 0.3fr 1.5fr;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); 
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+        
+    grid-template-areas: 
+    " txt txt txt"
+    "img prodh1 prodh2";
+    justify-items: center;
+}
+
+
+%titulo-higiene{grid-area: txt;
+    font-size: 170%;  margin: 10px;
+}
+
+%foto-higiene{
+   grid-area: img;
+   margin: 20px;
+   width: 75%;
+}
+
+
+%enlace-rel-marcas{
+    display: inline;
+    text-align: center;
+    font-size: 20px;
+}
 
