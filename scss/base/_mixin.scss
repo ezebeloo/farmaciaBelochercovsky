@@ -1,0 +1,6 @@
+@mixin fotoCarrito ($size){
+    width: $size;
+    height: $size;
+    margin-right: $size/2.5;
+    margin-left: $size/5;
+}

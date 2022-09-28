@@ -1,5 +1,5 @@
 footer{
-    background-color:rgb(86,130,89) ;
+    background-color: nth($colores, 3 ) ;
     @extend %display-flex;
     justify-content: space-around;
     align-items: center;}

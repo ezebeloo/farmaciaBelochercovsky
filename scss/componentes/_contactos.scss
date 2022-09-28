@@ -6,7 +6,9 @@
     
 .Formulario{font-family: nth($font-family, 1);}
     
-    
+.FormularioTitle{
+    font-size: 30px;
+}
 .opinionesTitulo{
                 display: flex;
                 justify-content: center;
@@ -23,6 +25,5 @@
         justify-items: center;
         align-items: center;   
     }
-    
-    
+
     

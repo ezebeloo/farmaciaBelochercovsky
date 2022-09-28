@@ -1,8 +1,10 @@
-*{margin: 0;
-    padding: 0;}
-@import "base/variables";
+*{
+margin: 0;
+padding: 0;}
 @import "base/extend";
 @import "base/listas";
+@import "base/maps";
+@import "base/mixin";
 @import "componentes/productos";
 @import "componentes/header";
 @import "componentes/footer";

@@ -46,15 +46,17 @@
 }
 
 .btn{
-    background-color:  nth($colores, 4 );
-    border: 1px solid black;
+    background-color:  map-get($btn-prod, bg-color );
+    border:  map-get($btn-prod, border );
     &:hover{
-    background-color: nth($colores, 1 );
-    color: nth($colores, 4 );
-    border: 1px solid black;}
+    background-color: map-get($btn-prod-hover, bg-color );
+    border: map-get($btn-prod-hover, border );
+    color: map-get($btn-prod-hover, color );
+    }
 }
 
 .btn-primary{color: #ECE9E6;}
+
 
 // Productos Higiene
 
