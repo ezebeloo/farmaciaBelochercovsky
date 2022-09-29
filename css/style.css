@@ -77,7 +77,7 @@
     margin-bottom: 5%;
   }
 }
-@media only screen and (min-width: 577px) and (max-width: 728px) {
+@media only screen and (min-width: 577px) and (max-width: 1023px) {
   #productos {
     grid-template-columns: 2fr;
     grid-template-rows: 2fr;
