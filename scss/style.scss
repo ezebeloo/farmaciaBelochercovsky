@@ -1,14 +1,20 @@
 *{
 margin: 0;
 padding: 0;}
+// Base
 @import "base/extend";
 @import "base/listas";
 @import "base/maps";
 @import "base/mixin";
+
+
+// Componentes
+
 @import "componentes/productos";
 @import "componentes/header";
 @import "componentes/footer";
 @import "componentes/home";
+@import "componentes/higiene";
 @import "componentes/perfumes";
 @import "componentes/marcas";
 @import "componentes/contactos";

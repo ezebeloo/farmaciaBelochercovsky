@@ -274,6 +274,35 @@ footer {
   width: 30%;
   display: flex;
 }
+@media only screen and (max-width: 1023px) {
+  .textoFooter {
+    margin: 2px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .textoDesktopFooter {
+    display: none;
+  }
+}
+
+.textoCeluTabletFooter {
+  display: none;
+}
+@media only screen and (max-width: 1023px) {
+  .textoCeluTabletFooter {
+    display: flex;
+  }
+}
+
+.imagenFacebook {
+  display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+  .imagenFacebook {
+    display: block;
+  }
+}
 
 .mapa {
   margin-top: 1%;

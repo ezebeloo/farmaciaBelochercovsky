@@ -7,6 +7,28 @@ footer{
 .textoFooter{
     width: 30%;
     display: flex;
+    @media only screen and (max-width: 1023px){
+        margin: 2px;
+        
+    }
+}
+.textoDesktopFooter{
+    @media  only screen and (max-width: 1023px) {
+        display: none;
+    }
+}
+.textoCeluTabletFooter{
+    display: none;
+    @media only screen and (max-width: 1023px){
+        display: flex;
+        
+    }
+}
+.imagenFacebook{
+    display: inline-block;
+   @media only screen and (max-width: 768px) {
+    display: block;
+   } 
 }
 
 .mapa{margin-top: 1%;
