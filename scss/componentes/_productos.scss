@@ -97,6 +97,15 @@
         "prodh2"
         ;
     }
+    @media only screen and (min-width:577px) and (max-width: 1023px) {
+        grid-template-columns: repeat( 1fr 1fr);
+        grid-template-rows: 0.2fr 0.7fr 1fr;
+        grid-template-areas: 
+        "txt txt"
+        "img img"
+        "prodh1 prodh2"
+        ;
+    }
 }
   
 #CuidadoCapilar{
@@ -111,6 +120,15 @@
         "prodh2"
         ;
     }
+    @media only screen and (min-width:577px) and (max-width: 1023px) {
+        grid-template-columns: repeat( 1fr 1fr);
+        grid-template-rows: 0.2fr 0.7fr 1fr;
+        grid-template-areas: 
+        "txt txt"
+        "img img"
+        "prodh1 prodh2"
+        ;
+    }
 }
 #CuidadoCovid{
     @extend %productoshig-disp;
@@ -122,6 +140,15 @@
         "img"
         "prodh1"
         "prodh2"
+        ;
+    }
+    @media only screen and (min-width:577px) and (max-width: 1023px) {
+        grid-template-columns: repeat( 1fr 1fr);
+        grid-template-rows: 0.2fr 0.7fr 1fr;
+        grid-template-areas: 
+        "txt txt"
+        "img img"
+        "prodh1 prodh2"
         ;
     }
 }

@@ -43,6 +43,11 @@
   margin: 20px;
   width: 75%;
 }
+@media only screen and (min-width: 577px) and (max-width: 1023px) {
+  .ImagenCovid, .ImagenCapilar, .ImagenBucal {
+    width: 60%;
+  }
+}
 
 #Ibupirac, #Febratic, #Amoxidal {
   display: inline;
@@ -145,6 +150,13 @@
     grid-template-areas: "txt" "img" "prodh1" "prodh2";
   }
 }
+@media only screen and (min-width: 577px) and (max-width: 1023px) {
+  #CuidadoBucal {
+    grid-template-columns: repeat(1fr 1fr);
+    grid-template-rows: 0.2fr 0.7fr 1fr;
+    grid-template-areas: "txt txt" "img img" "prodh1 prodh2";
+  }
+}
 
 @media only screen and (max-width: 576px) {
   #CuidadoCapilar {
@@ -153,12 +165,26 @@
     grid-template-areas: "txt" "img" "prodh1" "prodh2";
   }
 }
+@media only screen and (min-width: 577px) and (max-width: 1023px) {
+  #CuidadoCapilar {
+    grid-template-columns: repeat(1fr 1fr);
+    grid-template-rows: 0.2fr 0.7fr 1fr;
+    grid-template-areas: "txt txt" "img img" "prodh1 prodh2";
+  }
+}
 
 @media only screen and (max-width: 576px) {
   #CuidadoCovid {
     grid-template-columns: repeat(1fr);
     grid-template-rows: 0.2fr 0.7fr 1fr 1fr;
     grid-template-areas: "txt" "img" "prodh1" "prodh2";
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 1023px) {
+  #CuidadoCovid {
+    grid-template-columns: repeat(1fr 1fr);
+    grid-template-rows: 0.2fr 0.7fr 1fr;
+    grid-template-areas: "txt txt" "img img" "prodh1 prodh2";
   }
 }
 
