@@ -1,18 +1,17 @@
 #FotosOpiniones{width: 40%;
+    margin-left: 30%;
     @media only screen and (max-width: 576px) { 
         width: 56%;
     }
     }
     
-.Formulario{font-family: nth($font-family, 1);}
-    
-.FormularioTitle{
-    font-size: 30px;
-}
+
 .opinionesTitulo{
                 display: flex;
                 justify-content: center;
                 font-family:'Archivo', sans-serif;
+                color: darken(rgb(86,130,89), 10%);
+                margin-top: 20px;
             }
     
 .personas{display: flex; justify-content: center;}
@@ -26,4 +25,42 @@
         align-items: center;   
     }
 
-    
+
+
+.formulario{
+    background-color: nth($colores, 4 );
+    width: 70%;
+    border: 3px solid nth($colores, 5 );
+    margin-left: 3%;
+}
+.formulario-titulo{
+    color: darken(rgb(86,130,89), 10%);
+    text-align: center;
+    font-family: nth($font-family, 1 );
+}
+.textoFormulario{
+    display: block;
+    margin: 15px 5px 5px 20px;
+    color: nth($colores , 3 );
+    font-weight: 500;
+    font-family: nth($font-family, 2 );
+}
+.completar{
+    display: block;
+    margin: 0px 0px 0px 20px;
+    width: 50%;
+}
+.completar-mensaje{
+    margin: 0px 0px 0px 20px;
+    width: 70%;
+}
+.btn-enviar{
+    font-family: nth($font-family, 2 );
+    background-color: nth($colores, 5 );
+    border: none;
+    padding: 4px;
+    margin: 10px;
+    &:hover{
+        background-color: nth($colores, 2 );
+    }
+}

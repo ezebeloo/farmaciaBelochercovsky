@@ -320,6 +320,21 @@ footer {
   font-size: 140%;
 }
 
+.destacados {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 .MejoresOfertas {
   justify-content: center;
   margin: 10px;
@@ -330,6 +345,7 @@ footer {
 .IngresarEmail {
   justify-content: center;
   font-family: "Archivo";
+  margin-bottom: 2%;
 }
 
 .btn-outline-secondary {
@@ -446,6 +462,7 @@ ul li a:hover {
 
 #FotosOpiniones {
   width: 40%;
+  margin-left: 30%;
 }
 @media only screen and (max-width: 576px) {
   #FotosOpiniones {
@@ -453,18 +470,12 @@ ul li a:hover {
   }
 }
 
-.Formulario {
-  font-family: "Archivo";
-}
-
-.FormularioTitle {
-  font-size: 30px;
-}
-
 .opinionesTitulo {
   display: flex;
   justify-content: center;
   font-family: "Archivo", sans-serif;
+  color: #426344;
+  margin-top: 20px;
 }
 
 .personas {
@@ -479,6 +490,49 @@ ul li a:hover {
   gap: 10px;
   justify-items: center;
   align-items: center;
+}
+
+.formulario {
+  background-color: rgb(153, 194, 162);
+  width: 70%;
+  border: 3px solid rgb(122, 150, 124);
+  margin-left: 3%;
+}
+
+.formulario-titulo {
+  color: #426344;
+  text-align: center;
+  font-family: "Archivo";
+}
+
+.textoFormulario {
+  display: block;
+  margin: 15px 5px 5px 20px;
+  color: rgb(86, 130, 89);
+  font-weight: 500;
+  font-family: "Rubik";
+}
+
+.completar {
+  display: block;
+  margin: 0px 0px 0px 20px;
+  width: 50%;
+}
+
+.completar-mensaje {
+  margin: 0px 0px 0px 20px;
+  width: 70%;
+}
+
+.btn-enviar {
+  font-family: "Rubik";
+  background-color: rgb(122, 150, 124);
+  border: none;
+  padding: 4px;
+  margin: 10px;
+}
+.btn-enviar:hover {
+  background-color: rgb(204, 252, 203);
 }
 
 /*# sourceMappingURL=style.css.map */

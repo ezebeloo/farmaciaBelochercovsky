@@ -57,46 +57,79 @@
 
   <main>
       <!-- Formulario -->
-        <div class="Formulario">
-          <h1 class="FormularioTitle">FORMULARIO PARA CONTACTARSE</h1>
-            <P>Completar:
-                Nombre y Apellido:.......
-                Gmail:.......
-                Consulta:....
-            </P>
-        </div>
+      <h1 class="formulario-titulo">Formulario para contactarse:</h1>
+        <div class="formularioGeneral">
+          <form action="" method="get" class="formulario">
+              
+                  
 
+              <label for="nombre" class="textoFormulario">Nombre</label>
+              <input type="text" id="nombre" class="completar" required="">
+
+              <label for="apellido" class="textoFormulario">Apellido</label>
+              <input type="text" id="apellido" class="completar" required="">
+
+              <label for="email" class="textoFormulario">Email</label>
+              <input type="email" id="email" class="completar" required="">
+
+              <label for="asunto" class="textoFormulario">Telefono</label>
+              <input type="number" id="telefono" class="completar" required="">
+
+              <label for="mensaje" class="textoFormulario">Mensaje</label>
+              <textarea id="mensaje" class="completar-mensaje" required=""></textarea>
+
+              <input type="submit" class="btn-enviar" value="Enviar">
+          </form>
+      </div>
+    
         <!-- Opiniones -->
         <h2 class="opinionesTitulo">OPINIONES:</h2>
         <div class="contenedorOpiniones">
-            
+          
+        
+              <div data-aos="zoom-in">
                 <img id="FotosOpiniones" src="../img/opinion 1.webp" alt="Cliente 1 sonriente.">
-                <p>
-                  Estoy muy satisfecho con los productos que compre. 
-                  Por whatsapp resuelven tus dudas y te asesoran en todo momento sobre el funcionamiento de la web.</p>
-            
-                <img id="FotosOpiniones" src="../img/opinion 2.jpg" alt="Cliente 2 sonriente.">
-                <p>El producto me llego en perfecto estado! Me gusta la organizacion del sitio y la facilidad que ofrece al momento de comprar.</p>
 
-            
-                <img id="FotosOpiniones" src="../img/opinion 3.jpg" alt="Cliente 3 sonriente.">
-                <p>
+              </div>
+              <div data-aos="fade-right">
+                <p>Estoy muy satisfecho con los productos que compre. 
+                  Por whatsapp resuelven tus dudas y te asesoran en todo momento sobre el funcionamiento de la web.</p>
+              </div>
+                
+                  
+                  <div data-aos="zoom-in">
+                  <img id="FotosOpiniones" src="../img/opinion 2.jpg" alt="Cliente 2 sonriente.">  
+                  </div>
+                  <div data-aos="fade-right">
+                    <p>El producto me llego en perfecto estado! Me gusta la organizacion del sitio y la facilidad que ofrece al momento de comprar.</p>
+                  </div>
+                
+
+                <div data-aos="zoom-in">
+                  <img id="FotosOpiniones" src="../img/opinion 3.jpg" alt="Cliente 3 sonriente.">
+                </div>
+                <div data-aos="fade-right">
+                  <p>
                   Le compre a mi hija productos suyos y quede muy comforme!
                   Recomiendo mucho a este sitio para comprar productos higienicos.
                 </p>
+                </div>
+                
         
         </div>
 
         <!-- Boton Para Suscribirse -->
-    <div data-aos="fade-up">
-      <div class="MejoresOfertas">
-          <p>No te pierdas las mejores ofertas!</p>
-      </div>
-      <article class="IngresarEmail">
-              <p>Ingresa tu email...</p> 
-              <button type="button" class="btn btn-mio btn-outline-secondary">Suscribirme</button>
-      </article>
-    </div>
+        <div data-aos="fade-up">
+          <div class="MejoresOfertas">
+              <p>No te pierdas las mejores ofertas!</p>
+          </div>
+          <form action="" class="IngresarEmail">
+            <label for="email"  class="textoFormulario"></label>
+            <input type="email" class="completarEmail" placeholder="Ingresa tu email...">
+            <input type="submit" class="btn btn-mio" value="Suscribirme">
+          </form>
+          
+        </div>
   </main>
     
         <footer>
