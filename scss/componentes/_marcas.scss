@@ -20,15 +20,27 @@ ul{
     }
 }
 
-
 #Amoxidal{@extend %enlace-rel-marcas;
-    font-family: nth($font-family, 1 );}
+    font-family: nth($font-family, 2 );}
 #Febratic{
     @extend %enlace-rel-marcas;
-    font-family: nth($font-family, 1 );
+    font-family: nth($font-family, 2 );
 }
 #Ibupirac{@extend %enlace-rel-marcas;
-    font-family: nth($font-family, 1 );}
+    font-family: nth($font-family, 2 );}
+
+.contenedorAmoxidal{
+    display: flex;
+    justify-content: center;
+}
+.contenedorFebratic{
+    display: flex;
+    justify-content: center;
+}
+.contenedorIbupirac{
+    display: flex;
+    justify-content: center;
+}
 
 .producto-marca{
     font-family: nth($font-family, 1 );

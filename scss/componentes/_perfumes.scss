@@ -15,6 +15,18 @@ ul li  {font-family:'Archivo', sans-serif; margin: 2%;
 #Mujeres{text-align:  center;}
 #Infantil{text-align:  center;}
 
+#PerfumesHombre{
+    @extend %display-flex;
+    justify-content: center;
+}
+
+#Perfumes{
+    @extend %display-flex;
+    justify-content: center;
+}
+
+
+
 .perfume{
     font-family: nth($font-family, 1 ); 
     background-color: white;
