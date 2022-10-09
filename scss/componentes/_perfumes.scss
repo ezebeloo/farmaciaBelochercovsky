@@ -16,13 +16,27 @@ ul li  {font-family:'Archivo', sans-serif; margin: 2%;
 #Infantil{text-align:  center;}
 
 #PerfumesHombre{
-    @extend %display-flex;
+    display: flex;
     justify-content: center;
+    @media only screen and (max-width: 576px){
+        flex-direction: column;
+    }
 }
 
-#Perfumes{
-    @extend %display-flex;
+#PerfumesMujer{
+    display: flex;
     justify-content: center;
+    @media only screen and (max-width: 576px){
+        flex-direction: column;
+    }
+}
+
+#PerfumesInfantil{
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 576px){
+        flex-direction: column;
+    }
 }
 
 

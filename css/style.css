@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.MarcasOnePage, #Perfumes, #PerfumesHombre, .PerfumesOnePage, .IngresarEmail, .MejoresOfertas, .destacados h2, footer, #Iconos, header nav ul {
+.MarcasOnePage, .PerfumesOnePage, .IngresarEmail, .MejoresOfertas, .destacados h2, footer, #Iconos, header nav ul {
   display: flex;
   flex-direction: row;
 }
@@ -392,11 +392,33 @@ ul li {
 }
 
 #PerfumesHombre {
+  display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 576px) {
+  #PerfumesHombre {
+    flex-direction: column;
+  }
+}
 
-#Perfumes {
+#PerfumesMujer {
+  display: flex;
   justify-content: center;
+}
+@media only screen and (max-width: 576px) {
+  #PerfumesMujer {
+    flex-direction: column;
+  }
+}
+
+#PerfumesInfantil {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 576px) {
+  #PerfumesInfantil {
+    flex-direction: column;
+  }
 }
 
 .perfume {
